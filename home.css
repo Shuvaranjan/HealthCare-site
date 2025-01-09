@@ -37,6 +37,12 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.btn:active{
+  transform: translateY(2px);
+  background-color: #de6400;
+
+}
 img {
   width: 100%;
   display: flex;
@@ -127,6 +133,10 @@ header {
   scale: 1;
 }
 
+.nav__logo:hover{
+  cursor: none;
+}
+
 .nav__logo span {
   color: var(--secondary-color);
 }
@@ -138,10 +148,22 @@ header {
 }
 .link a {
   padding: 0.5rem;
-  color: var(--primary-color-light);
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.link2 a {
+  /* padding: 0.5rem; */
+  color: rgba(255, 255, 255, 0.6);
+  /* transition: all 0.3s ease; */
 }
 .link a:hover {
+  transition: all 0.3s ease;
   color: var(--white);
+  
+}
+.link2 a:hover {
+ cursor: default;
+  
 }
 .header__container {
   display: flex;
@@ -171,6 +193,11 @@ header {
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.header__form form:hover{
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 .header__form input {
   padding: 1rem;
@@ -231,21 +258,21 @@ header {
 .footer__col2 h4 {
   margin-bottom: 1rem;
   margin-left: 7rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
 }
 .footer__col p {
   margin-bottom: 1rem;
   color: var(--text-dark);
-  cursor: pointer;
+  cursor: text;
   transition: 0.3s;
 }
 .footer__col2 p {
   margin-bottom: 1rem;
   margin-left: 1rem;
   color: var(--text-dark);
-  cursor: pointer;
+  cursor: text;
 }
 .location__container {
   width: 140%;
@@ -258,6 +285,10 @@ header {
   display: flex;
   transition: all 2s;
 }
+.location__container:hover{
+  box-shadow: 5px 5px 30px 5px rgba(216, 209, 1, 0.724);
+
+}
 .location__container{
   transition: all 2s;
 }
@@ -266,6 +297,7 @@ iframe {
   height: 50vh;
   border-radius: 8px;
 }
+
 .footer__col2 i {
   color: var(--primary-color);
   font-size: 15px;
@@ -294,9 +326,11 @@ iframe {
   color: var(--white);
   cursor: pointer;
 }
-.footer__socials span {
+.footer__socials span a{
   color: var(--white);
+  transition: all 0.3s ease-out;
 }
-.footer__socials span:hover {
+.footer__socials span a:hover {
+  transition: all 0.3s ease-in;
   color: black;
 }

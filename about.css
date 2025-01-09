@@ -115,10 +115,10 @@ body {
 
 .about__image img {
   max-width: 400px;
-  max-height: 500px;
+  height: 250px;
   margin: auto;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5) ;
+  border-radius: 20px 0px;
+  box-shadow: 5px 5px 35px 10px rgba(0, 195, 85, 0.5) ;
   transition: all .9s;
 }
 .about__image img:hover{
